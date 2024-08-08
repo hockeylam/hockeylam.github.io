@@ -1,0 +1,50 @@
+.circle-image-profile-picture {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits within the circle */
+  }
+
+.summary-container {
+    background-color: #141a36; /* Replace with your desired color */
+    padding: 20px; /* Optional: add some padding inside the container */
+  }
+
+.summary-text {
+    color: white
+}
+
+.section-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 60px;
+  color: white; /* Ensuring text is readable on blue backgrounds */
+  text-align: center;
+}
+.section-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.section-education {
+  background-color: #003f5c; /* Dark Blue */
+}
+.section-experience {
+  background-color: #005f73; /* Teal Blue */
+}
+.section-projects {
+  background-color: #0077b6; /* Blue */
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.summary-container {
+  margin-bottom: 0; /* Remove margin below the summary container */
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.col-12, .col-md-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
