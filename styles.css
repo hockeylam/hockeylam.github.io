@@ -48,3 +48,11 @@
   padding-left: 0;
   padding-right: 0;
 }
+.arrow-icon {
+  font-size: 3rem; /* Increase the size of the arrow */
+  color:white; /* Change the color if needed */
+  margin-right: 40px; /* Add margin to the right */
+}
+.section-container {
+  padding: 40px;
+}
