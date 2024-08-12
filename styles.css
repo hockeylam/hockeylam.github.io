@@ -56,3 +56,12 @@
 .section-container {
   padding: 40px;
 }
+
+.icon-links a {
+  color: #cfcecc;
+  text-decoration: none;
+}
+
+.icon-links a:hover {
+  color: #999897; /* Optional: Slightly lighter color on hover */
+}
