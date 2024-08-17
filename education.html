@@ -50,6 +50,25 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+        }
+        .school-icon {
+            max-width: 225px; /* Significantly larger icon size */
+            margin-right: 50px; /* Move icon slightly off from the right */
+            margin-top: 20px; /* Add space above the icon when it moves below the text */
+        }
+        @media (max-width: 767.98px) {
+            .education-section {
+                flex-direction: column; /* Stack the content vertically on smaller screens */
+                text-align: center; /* Center align text on smaller screens */
+            }
+            .school-icon {
+                margin-right: 0; /* Remove right margin */
+                margin-top: 20px; /* Add space above the icon */
+            }
         }
     </style>
 </head>
@@ -65,16 +84,26 @@
         <!-- Highschool Section -->
         <div class="row education-section">
             <div class="col text-left">
-                <h2 class="section-title">Highschool</h2>
-                <p>Details about your high school education go here.</p>
+                <h2 class="section-title">Highschool - Midland School, CA</h2>
+                <p>Graduated class of 2022, class president of Junior year and Junior prefect</p>
+                <p>Relevant Coursework: Calculus AB, Calculus BC, Multivariable Calculus, Outdoor Leadership</p>
+                <p>Honors: Kit Dreyfus Award for Contribution to Life at Campus and Academic Excellence, AP Scholar award</p>
+            </div>
+            <div>
+                <img src="midland_school.png" alt="Highschool Icon" class="school-icon">
             </div>
         </div>
 
         <!-- Undergraduate Section -->
         <div class="row education-section">
             <div class="col text-left">
-                <h2 class="section-title">Undergraduate</h2>
-                <p>Details about your undergraduate education go here.</p>
+                <h2 class="section-title">Undergraduate - NYU Tandon School of Engineering</h2>
+                <p>B.S Computer Science with a minor in math, expected to graduate Spring 2026</p>
+                <p>Relevant Coursework: Data Analysis, discrete math, Design and Analysis of Algorithms, Data Structures, Object Oriented Programming, Databases, Computer Architecture, Intro to OS.</p>
+                <p>Deans List 2022-2023</p>
+            </div>
+            <div>
+                <img src="NYU.png" alt="Undergraduate Icon" class="school-icon">
             </div>
         </div>
 
@@ -91,3 +120,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
