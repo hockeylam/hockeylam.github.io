@@ -6,6 +6,9 @@
     <title>Experience</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
             background-color: #141a36;
@@ -45,11 +48,59 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Wraps content for smaller screens */
         }
         .section-title {
             margin-top: 30px;
             margin-bottom: 20px;
             font-size: 2rem;
+        }
+        .skills-icons i {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: #61dafb; /* A light blue color for the icons */
+        }
+        .skills-icons i.fa-python {
+            color: #306998;
+        }
+        .skills-icons i.fa-js-square {
+            color: #f0db4f;
+        }
+        .skills-icons i.fa-react {
+            color: #61dafb;
+        }
+        .skills-icons i.fa-html5 {
+            color: #e34f26;
+        }
+        .skills-icons i.fa-css3-alt {
+            color: #1572b6;
+        }
+        .skills-icons img {
+            width: 40px;
+            vertical-align: middle;
+            padding-bottom: 16px;
+            transform: scale(0.9);
+        }
+        /* Custom style for the NVT company icon */
+        .company-icon {
+            max-width: 400px; /* Increase size for larger screens */
+            width: 100%; /* Ensure it adapts to container size */
+            margin-right: 150px;
+            margin-top: 20px;
+        }
+        @media (max-width: 767.98px) {
+            .experience-section {
+                flex-direction: column; /* Stack the content vertically on smaller screens */
+                text-align: center; /* Center align text on smaller screens */
+            }
+            .company-icon {
+                max-width: 300px; /* Slightly smaller size for small screens */
+                margin-right: 0; /* Remove right margin on small screens */
+                margin-top: 20px; /* Add space above the icon */
+            }
         }
     </style>
 </head>
@@ -63,18 +114,29 @@
 
     <div class="container text-center mt-5">
         <!-- Technical Skills Section -->
-        <div class="row experience-section ">
+        <div class="row experience-section">
             <div class="col text-left">
                 <h2 class="section-title">Technical Skills</h2>
-                <p>Details about your technical skills go here.</p>
+                <div class="skills-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fas fa-database"></i>
+                    <img src="cpp.png" alt="C++ Logo">
+                </div>
             </div>
         </div>
 
-        <!-- FinTech Internship Section -->
-        <div class="row experience-section ">
+        <!-- FinTech Internship Section with NVT Icon -->
+        <div class="row experience-section">
             <div class="col text-left">
-                <h2 class="section-title">FinTech Internship</h2>
-                <p>Details about your FinTech internship go here.</p>
+                <h2 class="section-title">FinTech Internship - New Vision Technology</h2>
+                <p>I aided the fundraising department and the design department in a FinTech startup. I kept meeting memos and updated the fundraising pitch deck for the fundraising department. Then I moved onto designing and developing the company’s website. Due to the small size of the company, I worked as the sole developer and worked directly under our head of tech.</p>
+            </div>
+            <div>
+                <img src="nvt.png" alt="NVT Icon" class="company-icon">
             </div>
         </div>
     </div>
