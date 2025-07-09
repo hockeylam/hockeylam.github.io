@@ -11,7 +11,6 @@ import CSSIcon from './icons/css.svg';
 import LinkedInIcon from './icons/linkedin-icon.svg';
 import GithubIcon from './icons/github-icon.svg';
 
-
 const App = () => {
   const handleScroll = (id) => {
     const section = document.getElementById(id);
@@ -49,42 +48,63 @@ const App = () => {
             </p>
           </div>
         </div>
+
         <div id="skills" className="section skills-section">
           <h1 className="section-title">Skills</h1>
           <div className="skills-container">
-            <div className="skill-box">
-              <img src={CPPIcon} alt="C++" className="icon" />
-            </div>
-            <div className="skill-box">
-              <img src={PythonIcon} alt="python" className="icon" />
-            </div>
-            <div className="skill-box">
-              <img src={JavaScriptIcon} alt="JavaScript" className="icon" /> 
-            </div>
-            <div className="skill-box">
-              <img src={CSSIcon} alt="CSS" className="icon" /> 
-            </div>
-            <div className="skill-box">
-              <img src={HTMLIcon} alt="HTML" className="icon" /> 
-            </div>
-            <div className="skill-box">
-              <img src={ReactIcon} alt="React" className="icon" /> 
-            </div>
-            <div className="skill-box">
-              <img src={MySQLIcon} alt="MySQL" className="icon" /> 
-            </div>
+            <div className="skill-box"><img src={CPPIcon} alt="C++" className="icon" /></div>
+            <div className="skill-box"><img src={PythonIcon} alt="Python" className="icon" /></div>
+            <div className="skill-box"><img src={JavaScriptIcon} alt="JavaScript" className="icon" /></div>
+            <div className="skill-box"><img src={CSSIcon} alt="CSS" className="icon" /></div>
+            <div className="skill-box"><img src={HTMLIcon} alt="HTML" className="icon" /></div>
+            <div className="skill-box"><img src={ReactIcon} alt="React" className="icon" /></div>
+            <div className="skill-box"><img src={MySQLIcon} alt="MySQL" className="icon" /></div>
           </div>
         </div>
+
         <div id="experiences" className="section experiences-section">
           <h1 className="section-title">Experiences</h1>
           <div className="experiences-container">
+            {/* ChowPal – Full Stack Web App */}
+            <div className="experience-item">
+              <img src="/assets/chowpal.png" alt="ChowPal Project" className="experience-image" />
+              <div className="experience-content">
+                <h3 className="experience-title">ChowPal – Full Stack Web App</h3>
+                <div className="tags-container">
+                  <div className="tag">React</div>
+                  <div className="tag">FastAPI</div>
+                  <div className="tag">Firebase</div>
+                  <div className="tag">Google Places API</div>
+                </div>
+                <p className="experience-description">
+                  Led a team of 4 as the product manager to build ChowPal, a full-stack web app. 
+                  Integrated Firebase Auth, Firestore, Google Places API, and real-time chat using Firebase Realtime Database.
+                  Followed SRS and SDD standards for structured delivery.
+                </p>
+              </div>
+            </div>
+
+            {/* Data Science Bootcamp – Air Quality in India */}
+            <div className="experience-item">
+              <img src="/assets/airquality.png" alt="Air Quality in India" className="experience-image" />
+              <div className="experience-content">
+                <h3 className="experience-title">Air Quality in India – Data Science Bootcamp</h3>
+                <div className="tags-container">
+                  <div className="tag">Python</div>
+                  <div className="tag">Pandas</div>
+                  <div className="tag">Scikit-learn</div>
+                  <div className="tag">EDA</div>
+                </div>
+                <p className="experience-description">
+                  As project manager, led a team of 6 to analyze India's air quality data using EDA and machine learning. 
+                  Built predictive models and presented findings to stakeholders, gaining insights into SO₂ concentration trends.
+                </p>
+              </div>
+            </div>
+
             {/* Fintech Summer Internship */}
             <div className="experience-item">
-              <img
-                src="/assets/NVT.png"
-                alt="Fintech Internship"
-                className="experience-image"
-              />
+              <img src="/assets/NVT.png" alt="Fintech Internship" className="experience-image" />
               <div className="experience-content">
                 <h3 className="experience-title">Fintech Summer Internship</h3>
                 <div className="tags-container">
@@ -101,11 +121,7 @@ const App = () => {
 
             {/* Chameleon Wallpaper Changer */}
             <div className="experience-item">
-              <img
-                src="/assets/wallpaperchanger.png"
-                alt="Chameleon Wallpaper Changer"
-                className="experience-image"
-              />
+              <img src="/assets/wallpaperchanger.png" alt="Chameleon Wallpaper Changer" className="experience-image" />
               <div className="experience-content">
                 <h3 className="experience-title">Chameleon Wallpaper Changer</h3>
                 <div className="tags-container">
@@ -114,19 +130,15 @@ const App = () => {
                   <div className="tag">AWS</div>
                 </div>
                 <p className="experience-description">
-                  Coded a AI generated Wallpaper Changer on Android. Ran tests and developed in Androidn Studio.
-                  Generated photos are made with Stable Diffusion model stored in AWS.
+                  Coded an AI-generated Wallpaper Changer on Android. Ran tests and developed in Android Studio.
+                  Generated photos are made with a Stable Diffusion model stored in AWS.
                 </p>
               </div>
             </div>
 
             {/* Airport Database Design */}
             <div className="experience-item">
-              <img
-                src="/assets/airport.png"
-                alt="Airport Database Design"
-                className="experience-image"
-              />
+              <img src="/assets/airport.png" alt="Airport Database Design" className="experience-image" />
               <div className="experience-content">
                 <h3 className="experience-title">Airport Database Design</h3>
                 <div className="tags-container">
@@ -135,25 +147,23 @@ const App = () => {
                   <div className="tag">MAMP</div>
                 </div>
                 <p className="experience-description">
-                  Designed and implemented airport databse covering staff, tickets, customers, flights and connecting airports and more. 
-                  Database ran on MAMP. CRUD was handled in mySQL.
+                  Designed and implemented airport database covering staff, tickets, customers, flights and connecting airports. 
+                  CRUD functionality handled using MySQL hosted on MAMP.
                 </p>
               </div>
             </div>
+
+            {/* CPU Simulator */}
             <div className="experience-item">
-              <img
-                src="/assets/CPU.png"
-                alt="CPU Simulator (E20)"
-                className="experience-image"
-              />
+              <img src="/assets/CPU.png" alt="CPU Simulator (E20)" className="experience-image" />
               <div className="experience-content">
-                <h3 className="experience-title">CPU simulator</h3>
+                <h3 className="experience-title">CPU Simulator</h3>
                 <div className="tags-container">
                   <div className="tag">C++</div>
                 </div>
                 <p className="experience-description">
-                  E20 is a simplified version of assembly code native to Tandon School of Engineering.
-                  In this project I simulated a CPU capably of processing E20 code, including multi-caching capabilities (L1 and L2).
+                  Simulated a CPU capable of processing E20 assembly code native to Tandon School of Engineering.
+                  Implemented multi-caching (L1 and L2) mechanisms.
                 </p>
               </div>
             </div>
@@ -163,7 +173,6 @@ const App = () => {
         <div id="contact" className="section contact-section">
           <h1 className="section-title">Contacts</h1>
           <div className="contact-container">
-            {/* Top Section: LinkedIn & GitHub Icons */}
             <div className="contact-icons">
               <a href="https://www.linkedin.com/in/hockey-lam-448153252/" target="_blank" rel="noopener noreferrer" className="contact-icon">
                 <img src={LinkedInIcon} alt="LinkedIn" />
@@ -172,11 +181,9 @@ const App = () => {
                 <img src={GithubIcon} alt="GitHub" />
               </a>
             </div>
-
-            {/* Email & Phone */}
             <div className="contact-info">
               <p>Email: hl4779@nyu.edu</p>
-              <p>Phone: (917)801-6903 </p>
+              <p>Phone: (917)801-6903</p>
             </div>
           </div>
         </div>
